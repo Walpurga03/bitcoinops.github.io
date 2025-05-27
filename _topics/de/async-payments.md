@@ -1,119 +1,118 @@
 ---
-title: Async payments
+title: Asynchrone Zahlungen
+lang: de
 
-## Optional.  Shorter name to use for reference style links e.g., "foo"
-## will allow using the link [topic foo][].  Not case sensitive
+## Optional. Kürzer Name für Referenzstil-Links, z.B. "foo"
+## ermöglicht die Verwendung des Links [topic foo][]. Nicht case-sensitive
 # shortname: foo
 
-## Optional.  An entry will be added to the topics index for each alias
+## Optional. Ein Eintrag wird im Themenindex für jeden Alias hinzugefügt
 #title-aliases:
 #  - Foo
 
-## Required.  At least one category to which this topic belongs.  See
-## schema for options
+## Erforderlich. Mindestens eine Kategorie, zu der dieses Thema gehört
 topic-categories:
   - Lightning Network
 
-## Optional.  Produces a Markdown link with either "[title][]" or
-## "[title](link)"
+## Optional. Erzeugt einen Markdown-Link entweder als "[title][]" oder "[title](link)"
 #primary_sources:
 #    - title: Test
 #    - title: Example
 #      link: https://example.com
 
-## Optional.  Each entry requires "title" and "url".  May also use "feature:
-## true" to bold entry and "date"
+## Optional. Jeder Eintrag benötigt "title" und "url". Kann auch "feature: true" verwenden, um den Eintrag hervorzuheben und "date"
 optech_mentions:
-  - title: Paying offline nodes
+  - title: Zahlung an Offline-Knoten
     url: /en/newsletters/2021/10/20/#paying-offline-ln-nodes
 
-  - title: Trampoline routing and async mobile payments
+  - title: Trampoline-Routing und asynchrone Mobile-Zahlungen
     url: /en/newsletters/2022/06/15/#trampoline-routing-and-mobile-payments
 
-  - title: "Eclair #2435 adds support for a basic form of async payments when trampoline relay is used"
+  - title: "Eclair #2435 fügt Unterstützung für eine grundlegende Form asynchroner Zahlungen bei Verwendung von Trampoline-Relay hinzu"
     url: /en/newsletters/2022/10/05/#eclair-2435
 
-  - title: "2022 year-in-review: async payments"
+  - title: "Jahresrückblick 2022: Asynchrone Zahlungen"
     url: /en/newsletters/2022/12/21/#async-payments
 
-  - title: "Eclair #2464 adds a trigger useful for allowing one node to deliver an async payment to a peer"
+  - title: "Eclair #2464 fügt einen Trigger hinzu, der es einem Knoten ermöglicht, eine asynchrone Zahlung an einen Peer zu liefern"
     url: /en/newsletters/2023/01/04/#eclair-2464
 
-  - title: "Idea for non-interactive channel open commitments may allow fast rebalancing for async payments"
+  - title: "Idee für nicht-interaktive Kanal-Öffnungs-Commitments könnte schnelle Neuausrichtung für asynchrone Zahlungen ermöglichen"
     url: /en/newsletters/2023/01/11/#non-interactive-ln-channel-open-commitments
 
-  - title: Request for proof that an async payment was accepted
+  - title: Anfrage nach Beweis, dass eine asynchrone Zahlung akzeptiert wurde
     url: /en/newsletters/2023/01/25/#request-for-proof-that-an-async-payment-was-accepted
 
-  - title: Using adaptor signatures to prove an async payment was accepted
+  - title: Verwendung von Adaptor-Signaturen zum Nachweis, dass eine asynchrone Zahlung akzeptiert wurde
     url: /en/newsletters/2023/02/01/#ln-async-proof-of-payment
 
-  - title: "LDK #2973 adds support for intercepting onion messages to facilitate async payments"
+  - title: "LDK #2973 fügt Unterstützung für das Abfangen von Onion-Nachrichten zur Erleichterung asynchroner Zahlungen hinzu"
     url: /en/newsletters/2024/05/17/#ldk-2973
 
-  - title: "LDK #3125 introduces support for encoding and parsing messages needed for async payments"
+  - title: "LDK #3125 führt Unterstützung für Kodierung und Parsing von Nachrichten ein, die für asynchrone Zahlungen benötigt werden"
     url: /en/newsletters/2024/07/05/#ldk-3125
 
-  - title: "Eclair #2865 enables waking up a disconnected mobile peer for async payments or onion messages"
+  - title: "Eclair #2865 ermöglicht das Aufwecken eines getrennten mobilen Peers für asynchrone Zahlungen oder Onion-Nachrichten"
     url: /en/newsletters/2024/09/06/#eclair-2865
 
-  - title: "LDK #3140 adds support for paying static BOLT12 invoices to send async payments"
+  - title: "LDK #3140 fügt Unterstützung für die Zahlung statischer BOLT12-Rechnungen zum Senden asynchroner Zahlungen hinzu"
     url: /en/newsletters/2024/09/20/#ldk-3140
 
-## Optional.  Same format as "primary_sources" above
+## Optional. Gleiches Format wie "primary_sources" oben
 see_also:
-  - title: Trampoline payments
+  - title: Trampoline-Zahlungen
     link: topic trampoline payments
 
   - title: PTLCs
     link: topic ptlc
 
-  - title: Signature adaptors
+  - title: Signature-Adaptoren
     link: topic adaptor signatures
 
-  - title: Proof of payment
+  - title: Zahlungsnachweis
     link: topic proof of payment
 
-## Optional.  Force the display (true) or non-display (false) of stub
-## topic notice.  Default is to display if the page.content is below a
-## threshold word count
+## Optional. Erzwingt die Anzeige (true) oder Nichtanzeige (false) des Stub-Themenhinweises.
+## Standard ist die Anzeige, wenn page.content unter einer Schwellenwort-Anzahl liegt
 #stub: false
 
-## Required.  Use Markdown formatting.  Only one paragraph.  No links allowed.
-## Should be less than 500 characters
+## Erforderlich. Markdown-Formatierung verwenden. Nur ein Absatz. Keine Links erlaubt.
+## Sollte weniger als 500 Zeichen sein
 excerpt: >
-  **Async payments** are payments that are made when the receiver is
-  offline.  Onchain payments are async but interactive protocols like LN
-  may require cooperation of a third party to enable async payments.
+  **Asynchrone Zahlungen** sind Zahlungen, die getätigt werden, wenn der
+  Empfänger offline ist. Onchain-Zahlungen sind asynchron, aber interaktive
+  Protokolle wie LN erfordern möglicherweise die Zusammenarbeit eines
+  Dritten, um asynchrone Zahlungen zu ermöglichen.
+
 ---
-Traditional onchain Bitcoin payments are asynchronous (async) because
-the receiver can generate an output script (Bitcoin address) and give
-that address to the spender at any time, and then the spender can pay
-that address at any time---even when the receiver is offline.
-The process of securing that payment (receiving block confirmations)
-doesn't require any action from the receiver.
+Traditionelle Onchain-Bitcoin-Zahlungen sind asynchron, da der Empfänger
+zu jeder Zeit ein Output-Skript (Bitcoin-Adresse) generieren und diese
+Adresse an den Spender weitergeben kann, und dann kann der Spender diese
+Adresse zu jeder Zeit bezahlen – auch wenn der Empfänger offline ist.
+Der Prozess der Sicherung dieser Zahlung (Erhalten von Blockbestätigungen)
+erfordert keine Aktion vom Empfänger.
 
-For LN, the receiver needs to release a secret at the time a payment is
-received in order to secure that payment.  This requires that both the
-sender and receiver of a payment both be online at the same time.  In
-many cases, it's not a significant problem for a spender to be online
-because they've initiated the spending process and can trigger actions
-to ensure the payment gets sent.  But for some receivers, being online
-to receive a payment is more of a challenge.  For example, an LN node
-running on a mobile phone may be entirely disconnected from the internet
-some of the time and may not have access to the network other times
-because the node's app is running in the background.
+Bei LN muss der Empfänger zum Zeitpunkt des Zahlungsempfangs ein Geheimnis
+preisgeben, um diese Zahlung zu sichern. Dies erfordert, dass sowohl der
+Sender als auch der Empfänger einer Zahlung gleichzeitig online sind.
+In vielen Fällen ist es kein großes Problem für einen Spender, online zu sein,
+da er den Ausgabeprozess initiiert hat und Aktionen auslösen kann, um
+sicherzustellen, dass die Zahlung gesendet wird. Aber für einige Empfänger
+ist es eine größere Herausforderung, online zu sein, um eine Zahlung zu
+empfangen. Zum Beispiel könnte ein LN-Knoten, der auf einem Mobiltelefon läuft,
+manchmal völlig vom Internet getrennt sein und zu anderen Zeiten keinen
+Zugang zum Netzwerk haben, weil die App des Knotens im Hintergrund läuft.
 
-A [2021 discussion][offline ln] about improving this user experience led
-to several ideas about allowing a forwarding node to hold a payment for
-a receiving node until the receiver was known to be online.  The best
-described trustless method in that discussion required the use of
-[PTLCs][topic ptlc], which have not yet been added to LN as of the end
-of 2022.  An alternative [method][trampoline method], which could be
-implemented in the existing protocol, involved the use of trampoline
-relays.
+Eine [Diskussion von 2021][offline ln] über die Verbesserung dieser Benutzererfahrung
+führte zu mehreren Ideen darüber, wie ein Weiterleitungsknoten eine Zahlung
+für einen empfangenden Knoten halten könnte, bis bekannt ist, dass der
+Empfänger online ist. Die am besten beschriebene vertrauenslose Methode
+in dieser Diskussion erforderte die Verwendung von [PTLCs][topic ptlc],
+die bis Ende 2022 noch nicht zu LN hinzugefügt wurden. Eine alternative
+[Methode][trampoline method], die im bestehenden Protokoll implementiert
+werden könnte, beinhaltete die Verwendung von Trampoline-Relays.
 
-Async payments are also a key feature of the [Ark][topic ark] protocol.
+Asynchrone Zahlungen sind auch ein Schlüsselmerkmal des [Ark][topic ark]-Protokolls.
 
 {% include references.md %}
 {% include linkers/issues.md issues="" %}
