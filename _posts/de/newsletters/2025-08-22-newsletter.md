@@ -139,7 +139,6 @@ Release-Kandidaten zu helfen._
   dieser beliebten LN-Knoten-Implementierung.
 
 
-
 ## Wichtige Code- und Dokumentationsänderungen
 
 _Wichtige aktuelle Änderungen in [Bitcoin Core][bitcoin core repo],
